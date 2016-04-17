@@ -11,6 +11,13 @@ class Customer
         @@customers
     end
     
+    def self.find_by_name(name)
+        @@customers.each do |user|
+            user.name == name
+            return user
+        end
+    end
+    
     private
     
     def add_customer
