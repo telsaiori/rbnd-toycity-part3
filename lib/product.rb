@@ -26,6 +26,13 @@ class Product
     end
     
     def self.in_stock
+        stock = []
+        @@products.each do |product|
+            if product.stock != 0
+                stock << product
+            end
+        end
+        stock
     end
     
     private
