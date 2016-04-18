@@ -19,6 +19,12 @@ class Transaction
         @@transaction[id-1]
     end
     
+    def del_order
+        @@transaction.delete_if do |item|
+            item.id == self.id
+        end
+    end
+    
     private
     def transact
         if @product.stock ==0

@@ -1,0 +1,8 @@
+#####How long did you spend working on this project?
+#####What was the most rewarding challenge you conquered?
+
+###What two additional features did you build? Why?
+#1.A way for customers to cancel their order. I made the del_order to delete the relate transaction.
+I think it's a basic function.
+
+#####Where do you still have room to grow?
