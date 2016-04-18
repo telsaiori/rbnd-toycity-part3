@@ -1,5 +1,6 @@
 class Product
-    attr_reader :title, :price, :stock
+    attr_reader :title, :price
+    attr_accessor :stock
     @@products = []
     
     def initialize(options = {})
@@ -33,6 +34,11 @@ class Product
             end
         end
         stock
+    end
+    
+    
+    def purchase
+        
     end
     
     private

@@ -18,11 +18,15 @@ class Customer
         end
     end
     
+    def purchase(product)
+        Transaction.new(self.name, product)
+    end
+    
     private
     
     def add_customer
         if @@customers.map{|user|user.name}.include?(@name)
-            raise DuplicateProductError, "#{@name}  already exists."
+            raise DuplicateCustomerError, "#{@name}  already exists."
         else
             @@customers << self
         end
