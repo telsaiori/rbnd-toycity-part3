@@ -37,9 +37,6 @@ class Product
     end
     
     
-    def purchase
-        
-    end
     
     private
     

@@ -4,5 +4,7 @@
 ###What two additional features did you build? Why?
 #1.A way for customers to cancel their order. I made the del_order to delete the relate transaction.
 I think it's a basic function.
+#2. Better ways to find transactions
+I think if we can find the transactions by customer name or product name is more easy to find what we want.
 
 #####Where do you still have room to grow?

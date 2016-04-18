@@ -19,7 +19,8 @@ class Customer
     end
     
     def purchase(product)
-        Transaction.new(self.name, product)
+        #Transaction.new(self.name, product)
+        Transaction.new(self, product)
     end
     
     
