@@ -6,8 +6,6 @@ class Transaction
     def initialize(customer, product)
         @customer = customer
         @product = product
-        @id = @@id += 1
-        @@transaction << self
         transact
     end
     
@@ -45,9 +43,11 @@ class Transaction
     
     def transact
         if @product.stock ==0
-            raise DuplicateProductError, "#{@product.title} is out of stock."
+            raise OutOfStockError, "#{@product.title} is out of stock."
         else
+            @@transaction << self
             @product.stock -= 1
+            @id = @@id += 1
         end
     end
 

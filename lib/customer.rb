@@ -13,8 +13,9 @@ class Customer
     
     def self.find_by_name(name)
         @@customers.each do |user|
-            user.name == name
+           if user.name == name
             return user
+           end
         end
     end
     
