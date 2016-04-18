@@ -1,10 +1,20 @@
 #####How long did you spend working on this project?
-#####What was the most rewarding challenge you conquered?
+10 hours
+I'm a newbie in programming.
+It's really tough for newbie.
 
-###What two additional features did you build? Why?
+#####What was the most rewarding challenge you conquered?
+OOP concept still confused me, I always stuck when I try to get the data from object.
+for ex. get name from @@customers.
+especially in the transaction.rb,  because @@transaction include the Product and Customer objects.
+It's hard for me to understand what kind of data is inside the object and how I can use it.
+
+####What two additional features did you build? Why?
 #1.A way for customers to cancel their order. I made the del_order to delete the relate transaction.
 I think it's a basic function.
 #2. Better ways to find transactions
 I think if we can find the transactions by customer name or product name is more easy to find what we want.
 
 #####Where do you still have room to grow?
+Everywhere?
+I take too much time to stuck on the simple question.
