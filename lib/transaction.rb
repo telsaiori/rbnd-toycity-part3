@@ -6,7 +6,7 @@ class Transaction
     def initialize(customer, product)
         @customer = customer
         @product = product
-        @@id += 1
+        @id = @@id += 1
         @@transaction << self
         transact
     end
@@ -28,14 +28,14 @@ class Transaction
     def self.find_by(option = {})
         if option[:customer]
             @@transaction.each do |item|
-                if item.customer.name == "Walter Latimer"
+                if item.customer.name == option[:customer]
                     p item
                 end
             end
         end
         if option[:product]
             @@transaction.each do |item|
-                if item.customer.name == "Walter Latimer"
+                if item.product.title == option[:product]
                     p item
                 end
             end
